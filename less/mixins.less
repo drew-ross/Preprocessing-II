@@ -3,8 +3,13 @@
     font-size: 1.8rem;
     padding: 15px;
     border-radius: 15px;
-    width: 200px;
     text-align: center;
     background: @background;
     color: @color;
+}
+
+.flex(@direction, @justify, @align) {
+    display: flex;
+    flex-direction: @direction;
+    align-content: @align;
 }

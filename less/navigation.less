@@ -2,20 +2,9 @@
 nav {
     width: 50%;
     height: 100%;
-}
 
-li, h1 {
-    align-self: center;
-}
-
-nav ul {
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    
-    li a {
-        text-decoration: none;
-        color: @font-color;
-        font-size: 1.7rem;
+    @media @mobile {
+        .flex(column, center, center);
+        width: 100%;
     }
 }
