@@ -168,9 +168,37 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.border-span {
+  display: block;
+  width: 100%;
+  border-top: 2px dashed #C0C0C0;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+.navigation nav {
+  width: 50%;
+  height: 100%;
+}
+.navigation li,
+.navigation h1 {
+  align-self: center;
+}
+.navigation nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.navigation nav ul li a {
+  text-decoration: none;
+  color: #212529;
+  font-size: 1.7rem;
+}
 .footer {
   width: 100%;
-  border-top: 2px dashed silver;
+  border-top: 2px dashed #C0C0C0;
   background: #FFEBCD;
 }
 .footer p {
