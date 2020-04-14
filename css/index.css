@@ -311,6 +311,7 @@ header div nav ul li a {
 }
 @media (max-width: 500px) {
   .home .content-pick {
+    padding-top: 10px;
     width: 90%;
     margin: 0 auto;
     display: flex;
