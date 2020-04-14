@@ -13,3 +13,14 @@
     flex-direction: @direction;
     align-content: @align;
 }
+
+.hover-animation(@animation-name, @color-from, @color-to) {
+    @keyframes @animation-name {
+        from {background: @color-from};
+        from {color: @color-to};
+        to {background: @color-to};
+        to {color: @color-from}
+    }
+}
+
+.hover-animation(button-animation, @eastern-blue, @white);

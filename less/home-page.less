@@ -127,6 +127,13 @@ header div {
 
   .btn {
     .button-style(darken(@eastern-blue, 5%), @white);
+  
+    &:hover {
+      animation-name: button-animation;
+      animation-duration: .5s;
+      color: @eastern-blue;
+      background: @white;
+    }
   }
 }
 // home
