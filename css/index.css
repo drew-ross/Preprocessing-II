@@ -150,7 +150,7 @@ h1 {
 h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
-  margin: 10px 0;
+  margin: 30px 0 5px 0;
 }
 h4 {
   font-size: 2.5rem;
@@ -174,6 +174,12 @@ img {
   display: block;
   width: 100%;
   border-top: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .border-container {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 nav {
   width: 50%;
@@ -258,6 +264,7 @@ header div nav ul li a {
 @media (max-width: 500px) {
   .home .content-section .text-content {
     width: 90%;
+    margin: 0 auto;
   }
 }
 .home .content-section .img-content {
@@ -268,13 +275,16 @@ header div nav ul li a {
   .home .content-section .img-content {
     width: 90%;
   }
+  .home .content-section .img-content img {
+    width: 100%;
+    tex-align: center;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
 }
 @media (max-width: 500px) {
   .home .inverse-content {

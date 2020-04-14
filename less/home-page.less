@@ -59,6 +59,7 @@ header div {
 
       @media @mobile {
         width: 90%;
+        margin: 0 auto;
       }
     }
 
@@ -69,6 +70,11 @@ header div {
 
       @media @mobile {
         width: 90%;
+
+        img {
+          width: 100%;
+          tex-align: center;
+        }
       }
 
       img {
@@ -79,12 +85,9 @@ header div {
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: @navigation-border;
 
     @media @mobile {
-
       flex-direction: column-reverse;
-    
     }
   }
 
