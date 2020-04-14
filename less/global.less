@@ -16,11 +16,13 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 4rem;
+  margin: 10px;
 }
 
 h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
+  margin: 30px 0 5px 0;
 }
 
 h4 {
@@ -43,4 +45,17 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+
+.border-span {
+  display: block;
+  width: 100%;
+  border-top: @navigation-border;
+}
+
+.border-container {
+  @media @mobile {
+    width: 90%;
+    margin: 0 auto;
+  }
 }

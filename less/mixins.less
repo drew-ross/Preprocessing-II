@@ -1,1 +1,26 @@
 // Mixins in here
+.button-style(@background, @color) {
+    font-size: 1.8rem;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    background: @background;
+    color: @color;
+}
+
+.flex(@direction, @justify, @align) {
+    display: flex;
+    flex-direction: @direction;
+    align-content: @align;
+}
+
+.hover-animation(@animation-name, @color-from, @color-to) {
+    @keyframes @animation-name {
+        from {background: @color-from};
+        from {color: @color-to};
+        to {background: @color-to};
+        to {color: @color-from}
+    }
+}
+
+.hover-animation(button-animation, @eastern-blue, @white);
